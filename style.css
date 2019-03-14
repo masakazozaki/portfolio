@@ -46,6 +46,9 @@
     font-weight: 100;
 
 }
+.position-absolute {
+    position: absolute;
+}
 
 .container {
     width: 1024px;
@@ -83,9 +86,17 @@ p {
     width: 50%;
     background: linear-gradient(135deg, #29aeff84, #e629ff24);
     float: left;
-    position: absolute;
-    -webkit-clip-path: polygon(0 0, 34% 0, 100% 100%, 0% 100%);
-clip-path: polygon(0 0, 34% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
+}
+
+.triangle-right {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(135deg, #e629ff24, #29aeff84);
+    float: right;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
 }
 
 /*font settings*/
