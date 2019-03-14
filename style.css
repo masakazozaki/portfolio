@@ -49,6 +49,7 @@
 
 .container {
     width: 1024px;
+    height: 100%;
     margin: auto auto;
     top: 0;
     bottom: 0;
@@ -76,6 +77,15 @@ p {
 .background-dark {
     background-color: #061a26;
     color: #e3f5ff;
+}
+.triangle-left {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(135deg, #29aeff84, #e629ff24);
+    float: left;
+    position: absolute;
+    -webkit-clip-path: polygon(0 0, 34% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 34% 0, 100% 100%, 0% 100%);
 }
 
 /*font settings*/
@@ -125,10 +135,6 @@ p {
 .header-section {
     height: 100vh;
     background: linear-gradient(135deg, #29aeff, #e629ff);
-}
-
-.header-container {
-    height: 100vh;
 }
 
 .cls-1 {
@@ -181,22 +187,15 @@ p {
     }
 }
 
-header h1 {
-    padding-top: 20vh;
-    color: #e3f5ff;
-    font-size: 64px;
-    font-family: "SF-Pro-Display-Semibold";
-}
-
 header svg {
     padding-top: 20vh;
     width: 500px;
 }
 
-header img {
-    right: 0;
-    bottom: 10%;
+#pentagon {
+    float: right;
     position: absolute;
+    bottom: 10%;
 }
 
 #before {
