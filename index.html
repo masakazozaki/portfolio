@@ -6,11 +6,30 @@
     <title>Masakaz Ozaki</title>
     <link rel="stylesheet" href="style.css">
     <script src="js/snap.svg-min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <!--    fuwat below-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.fuwat').css('visibility', 'hidden');
+            $(window).scroll(function() {
+                var windowHeight = $(window).height(),
+                    topWindow = $(window).scrollTop();
+                $('.fuwat').each(function() {
+                    var objectPosition = $(this).offset().top;
+                    if (topWindow > objectPosition - windowHeight + 200) {
+                        $(this).addClass("fuwatAnime");
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <header class="header-section">
+    <header class="header-section" id="gradient">
+        <div id="particles-js"></div>
+        <script src="main.js"></script>
         <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.45 507.57">
                 <path class="cls-1" d="M46.84,54.34V17h-.26L31.38,54.34H25L9.75,17H9.5V54.34H1V1.71H11.9L28,41.87h.29L44.43,1.71H55.3V54.34Z" />
@@ -35,9 +54,9 @@
                 <path class="cls-1" d="M220.08,126.92a5,5,0,1,1,5,4.93A4.93,4.93,0,0,1,220.08,126.92Zm.47,10.76h9.08v38.66h-9.08Z" />
                 <path class="cls-1" d="M235.65,157c0-12.47,7.44-20.13,18.71-20.13s18.7,7.62,18.7,20.13-7.36,20.09-18.7,20.09S235.65,169.55,235.65,157Zm28.19,0c0-8.21-3.72-12.91-9.48-12.91s-9.49,4.7-9.49,12.91,3.72,12.91,9.49,12.91S263.84,165.25,263.84,157Z" />
             </svg>
-            <svg id="pentagon" viewBox="0 0 550 550.57">
+            <svg id="pentagon" class="fuwafuwa" viewBox="0 0 550 550.57">
                 <path id="before" d="M39.25,122.48,7.37,206.55a113.4,113.4,0,0,0-3.38,70l23.62,86.75A113.38,113.38,0,0,0,66,422l70.1,56.29a113.45,113.45,0,0,0,65.54,24.86l89.81,4.33A113.42,113.42,0,0,0,359.11,489l75.21-49.28a113.51,113.51,0,0,0,43.89-54.65L510.08,301a113.41,113.41,0,0,0,3.39-70l-23.63-86.75a113.38,113.38,0,0,0-38.42-58.63l-70.1-56.3A113.48,113.48,0,0,0,315.78,4.47L226,.13a113.43,113.43,0,0,0-67.63,18.42L83.14,67.83A113.35,113.35,0,0,0,39.25,122.48Z" />
-                <path id="after"class="cls-1" d="M6,138.56l-2,85,1,71-5,89c0,24,3,56,43,74l93,34,53,22,97,31c30,8,60-2,76-22l53-70,45-54,61-81c8-11,19-49,2-75l-51-74-36-61-61-82c-26-29-57-29-84-21l-75,25-65,14-94,29C28,80.56,6,110.56,6,138.56Z"/></svg>
+                <path id="after" class="cls-1" d="M6,138.56l-2,85,1,71-5,89c0,24,3,56,43,74l93,34,53,22,97,31c30,8,60-2,76-22l53-70,45-54,61-81c8-11,19-49,2-75l-51-74-36-61-61-82c-26-29-57-29-84-21l-75,25-65,14-94,29C28,80.56,6,110.56,6,138.56Z" /></svg>
             <script>
                 var svg = Snap('#pentagon'),
                     eFaceBefore = svg.select('#before'),
@@ -60,55 +79,70 @@
         </div>
     </header>
     <section id="About" class="normal-section background-dark">
-       <div class="triangle-left"></div>
+        <div class="triangle-left"></div>
         <div class="container">
-           <div class="position-absolute">
-            <img src="images/ProfileImage.png" alt="" class="profile-image">
-            <h1 class="title-text">About me</h1>
-            <h2 class="main-text">尾崎正和 <span class="ultra-light-text">/ Masakaz Ozaki</span></h2>
-            <h2 class="sub-text">慶應義塾大学環境情報学部2年<br>鳴川肇研究会</h2>
-            <p>高校三年生夏、大学の一般受験は自分のフィールドでないと悟る。そして実技入試、情報入試などの自分にしかない技術を最大限活かせる受験方式で大学を受験することを決意。中学二年からプログラミングをしていたこともあり、情報入試で慶應義塾大学環境情報学部に入学。大学ではデザイン、建築、プログラミングの3つを柱に多角的に学び、大学2年から鳴川研究会でデザインや建築を学びながら、Life is Tech!でメンターとして中高生にプログラミングとITの楽しさを伝えている。</p>
+            <div class="position-absolute" id="scroll-delay">
+                <img src="images/ProfileImage.png" alt="" class="profile-image fuwat">
+                <h1 class="title-text fuwat" >About me</h1>
+                <h2 class="main-text fuwat">尾崎正和 <span class="ultra-light-text">/ Masakaz Ozaki</span></h2>
+                <h2 class="sub-text fuwat">慶應義塾大学環境情報学部2年<br>鳴川肇研究会</h2>
+                <p class="fuwat">高校三年生夏、大学の一般受験は自分のフィールドでないと悟る。そして実技入試、情報入試などの自分にしかない技術を最大限活かせる受験方式で大学を受験することを決意。中学二年からプログラミングをしていたこともあり、情報入試で慶應義塾大学環境情報学部に入学。大学ではデザイン、建築、プログラミングの3つを柱に多角的に学び、大学2年から鳴川研究会でデザインや建築を学びながら、Life is Tech!でメンターとして中高生にプログラミングとITの楽しさを伝えている。</p>
             </div>
         </div>
     </section>
     <section id="Concept" class="normal-section background-light">
-       <div class="triangle-right"></div>
+        <div class="triangle-right"></div>
         <div class="container">
-            <h1 class="title-text">Concept</h1>
-            <h2 class="concept-text">PAST IS <br>FOR FUTURES</h2>
-            <p>ポートフォリオは過去の寄せ集め。<br>
+            <h1 class="title-text fuwat">Concept</h1>
+            <h2 class="concept-text fuwat">PAST IS <br>FOR FUTURE</h2>
+            <p class="fuwat">ポートフォリオは過去の寄せ集め。<br>
                 その過去の集合体をどうするか。<br>
                 僕は過去を未来につなげたい。<br>
                 このポートフォリオは未来の自分のための基盤になるはずだ。<br>
-                そんな思いを「Past is For Futures」の一言に。</p>
+                そんな思いを「Past is For Future」の一言に。</p>
         </div>
     </section>
     <section id="Passion" class="normal-section background-dark">
         <div class="triangle-left"></div>
         <div class="container">
-            <h1 class="title-text">Passion</h1>
-            <h2 class="main-text">まだこの世にないものを<br>生み出し続ける</h2>
-            <p>まだこの世にないものを生み続けることは決して簡単ではない。<br>
+            <h1 class="title-text fuwat">Passion</h1>
+            <h2 class="main-text fuwat">まだこの世にないものを<br>生み出し続ける</h2>
+            <p class="fuwat">まだこの世にないものを生み続けることは決して簡単ではない。<br>
                 しかし生み続ければいつか世界は変えられる。</p>
         </div>
     </section>
     <section id="What-I-do" class="normal-section background-light">
-       <div class="triangle-right"></div>
-        <div class="container">
-            <h1 class="title-text">What I do</h1>
-            <h2 class="main-text-thin">iOS App Development<br>
-                UI UX Design<br>
-                Product Design<br>
-                Architecture Design<br>
-                Web Design</h2>
+        <div class="triangle-right"></div>
+        <div class="container fuwat">
+            <h1 class="title-text fuwat">What I do</h1>
+            <h2 class="main-text-thin fuwat">iOS App Development</h2>
+            <h2 class="main-text-thin fuwat">UI UX Design</h2>
+            <h2 class="main-text-thin fuwat">Product Design</h2>
+            <h2 class="main-text-thin fuwat">Architecture Design</h2>
+            <h2 class="main-text-thin fuwat">Web Design</h2>
         </div>
     </section>
     <section id="Works" class="background-dark">
         <div class="container">
             <h1 class="title-text">WORKS</h1>
-            <h2>Recent Activitys</h2>
-            <h2>Vertual Objects</h2>
-            <h2>Physical Obhects</h2>
+            <div id="recent-activitys">
+                <h2>Recent Activitys</h2>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div id="vertual-obhects">
+                <h2>Vertual Objects</h2>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div id="physical-objects">
+                <h2>Physical Objects</h2>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
         </div>
     </section>
     <section id="Social Networks" class="normal-section background-light">
