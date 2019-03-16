@@ -46,13 +46,14 @@
     font-weight: 100;
 
 }
+
 .position-absolute {
     position: absolute;
 }
 
-canvas{
-  display:block;
-  vertical-align:bottom;
+canvas {
+    display: block;
+    vertical-align: bottom;
 }
 
 .container {
@@ -86,13 +87,14 @@ p {
     background-color: #061a26;
     color: #e3f5ff;
 }
+
 .triangle-left {
     height: 100%;
     width: 50%;
     background: linear-gradient(135deg, #29aeff84, #e629ff24);
     float: left;
     -webkit-clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
-clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
 }
 
 .triangle-right {
@@ -101,25 +103,43 @@ clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
     background: linear-gradient(135deg, #e629ff24, #29aeff84);
     float: right;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
 }
+
 /*pentagon fuwafuwa*/
 .fuwafuwa {
-    -webkit-animation:fuwafuwa 3s infinite linear alternate;
-    animation:fuwafuwa 3s infinite linear alternate;
+    -webkit-animation: fuwafuwa 3s infinite linear alternate;
+    animation: fuwafuwa 3s infinite linear alternate;
 }
 
 @-webkit-keyframes fuwafuwa {
-    0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
-    50% {-webkit-transform:translate(0, 15px) rotate(0deg);}
-    100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+    0% {
+        -webkit-transform: translate(0, 0) rotate(-5deg);
+    }
+
+    50% {
+        -webkit-transform: translate(0, 15px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0)rotate(5deg);
+    }
 }
 
 @keyframes fuwafuwa {
-    0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
-    50% {-webkit-transform:translate(0, 15px) rotate(0deg);}
-    100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+    0% {
+        -webkit-transform: translate(0, 0) rotate(-5deg);
+    }
+
+    50% {
+        -webkit-transform: translate(0, 15px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translate(0, 0)rotate(5deg);
+    }
 }
+
 /*font settings*/
 .title-text {
     padding-top: 88px;
@@ -162,60 +182,47 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
     font-weight: 100;
     padding-bottom: 32px;
 }
+
 /*fuwat below*/
 .fuwatAnime {
- -webkit-animation-fill-mode:both;
- -ms-animation-fill-mode:both;
- animation-fill-mode:both;
- -webkit-animation-duration:1.5s;
- -ms-animation-duration:1.5s;
- animation-duration:1.5s;
- -webkit-animation-name: fuwatAnime;
- -ms-animation-name: fuwatAnime;
- animation-name: fuwatAnime;
- visibility: visible !important;
-}
-@-webkit-keyframes fuwatAnime {
- 0% { opacity: 0; -webkit-transform: translateY(-20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); }
-}
-@keyframes fuwatAnime {
- 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
- 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
 }
 
-/*scroll delaying*/
-/*vertical*/
-#scroll_bg01 {
-  background-image: url(images/scroll_bg01.png);
-  background-repeat: no-repeat;
-  background-position: 10px 0px;
-  height: 3000px;
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
 }
-#scroll_bg02 {
-  background-image: url(images/scroll_bg02.png);
-  background-repeat: no-repeat;
-  background-position: 220px 0px;
-  height: 3000px;
-}
-#scroll_bg03 {
-  background-image: url(images/scroll_bg03.png);
-  background-repeat: no-repeat;
-  background-position: 440px 0px;
-  height: 3000px;
-}
-/*horizontal*/
-#scroll_bg04 {
-  background-image: url(images/scroll_bg01.png);
-  background-repeat: no-repeat;
-  background-position: 0px 10px;
-  height: 3000px;
-}
-#scroll_bg05 {
-  background-image: url(images/scroll_bg02.png);
-  background-repeat: no-repeat;
-  background-position: 0px 220px;
-  height: 3000px;
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 /*For header*/
@@ -225,51 +232,51 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
 
 /* ---- stats.js ---- */
 
-.count-particles{
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
+.count-particles {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
 }
 
-.js-count-particles{
-  font-size: 1.1em;
+.js-count-particles {
+    font-size: 1.1em;
 }
 
 #stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
 }
 
-.count-particles{
-  border-radius: 0 0 3px 3px;
+.count-particles {
+    border-radius: 0 0 3px 3px;
 }
 
 
 /* ---- particles.js container ---- */
 
-#particles-js{
-  width: 100%;
-  height: 100%;
+#particles-js {
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     position: absolute;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 /*title svg animation*/
@@ -343,8 +350,6 @@ header svg {
     display: none;
 }
 
-
-
 /*For about*/
 .profile-image {
     width: 300px;
@@ -358,9 +363,29 @@ header svg {
 /*For passion*/
 /*For what-I-do*/
 /*For works*/
-.works-image {
-    padding-right: 32px;
+.work-category-text {
+    color: #29aeff;
+    background: -webkit-linear-gradient(90deg, #29aeff, #e629ff);
+    background: linear-gradient(90deg, #29aeff, #e629ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "SF-Pro-Display-Semibold";
+    font-size: 42px;
+    display:inline-block
 }
+
+.works-image {
+    padding: 16px 64px;
+}
+
+.cell-text {
+    width: 400px;
+    float: left;
+    position: absolute;
+    overflow: hidden;
+}
+
 /*For Social NetWorks*/
 /*For Footer*/
 .copyright {
