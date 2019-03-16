@@ -364,7 +364,7 @@ header svg {
 /*For what-I-do*/
 /*For works*/
 .work-category-text {
-    color: #29aeff;
+    color: #29aeff
     background: -webkit-linear-gradient(90deg, #29aeff, #e629ff);
     background: linear-gradient(90deg, #29aeff, #e629ff);
     -webkit-background-clip: text;
