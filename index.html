@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <title>Masakaz Ozaki</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/snap.svg-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="js/particles.min.js"></script>
+    <script src="js/jquery.bxSlider.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script>
+        $(document).ready(function() {
+            $('.bxslider').bxSlider();
+        });
+    </script>
     <!--    fuwat below-->
     <script type="text/javascript">
         $(document).ready(function() {
@@ -29,7 +36,7 @@
 <body>
     <header class="header-section" id="gradient">
         <div id="particles-js"></div>
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
         <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.45 507.57">
                 <path class="cls-1" d="M46.84,54.34V17h-.26L31.38,54.34H25L9.75,17H9.5V54.34H1V1.71H11.9L28,41.87h.29L44.43,1.71H55.3V54.34Z" />
@@ -83,7 +90,7 @@
         <div class="container">
             <div class="position-absolute" id="scroll-delay">
                 <img src="images/ProfileImage.png" alt="" class="profile-image fuwat">
-                <h1 class="title-text fuwat" >About me</h1>
+                <h1 class="title-text fuwat">About me</h1>
                 <h2 class="main-text fuwat">尾崎正和 <span class="ultra-light-text">/ Masakaz Ozaki</span></h2>
                 <h2 class="sub-text fuwat">慶應義塾大学環境情報学部2年<br>鳴川肇研究会</h2>
                 <p class="fuwat">高校三年生夏、大学の一般受験は自分のフィールドでないと悟る。そして実技入試、情報入試などの自分にしかない技術を最大限活かせる受験方式で大学を受験することを決意。中学二年からプログラミングをしていたこともあり、情報入試で慶應義塾大学環境情報学部に入学。大学ではデザイン、建築、プログラミングの3つを柱に多角的に学び、大学2年から鳴川研究会でデザインや建築を学びながら、Life is Tech!でメンターとして中高生にプログラミングとITの楽しさを伝えている。</p>
@@ -127,9 +134,13 @@
             <h1 class="title-text">WORKS</h1>
             <div id="recent-activitys">
                 <h2>Recent Activitys</h2>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+                <ul class="bxslider">
+  <li><img src="images/works-default.png"class="works-image">ghnbhjmnbhjm</li>
+   <li><img src="images/works-default.png" title="キャプション1">ghnbhjmnbhjm</li>
+    <li><img src="images/works-default.png" title="キャプション1">ghnbhjmnbhjm</li>
+     <li><img src="images/works-default.png" title="キャプション1">ghnbhjmnbhjm</li>
+      <li><img src="images/works-default.png" title="キャプション1">ghnbhjmnbhjm</li>
+</ul>
             </div>
             <div id="vertual-obhects">
                 <h2>Vertual Objects</h2>

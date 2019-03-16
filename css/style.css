@@ -1,0 +1,377 @@
+/*For all contents*/
+@font-face {
+    font-family: 'SF-Pro-Display-Light';
+    src: url('../fonts/SF-Pro-Display-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'KozGoPr6N-Regular';
+    src: url('../fonts/KozGoPr6N-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Semibold';
+    src: url('../fonts/SF-Pro-Display-Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Thin';
+    src: url('../fonts/SF-Pro-Display-Thin.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Ultralight';
+    src: url('../fonts/SF-Pro-Display-Ultralight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SFCompactDisplay-Semibold';
+    src: url('../fonts/SFCompactDisplay-Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF-Pro-Display-Regular';
+    src: url('../fonts/SF-Pro-Display-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'DINNextLTPro-Bold';
+    src: url('../fonts/DINNextLTPro-Bold.otf') format('opentype');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+
+}
+.position-absolute {
+    position: absolute;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+.container {
+    width: 1024px;
+    height: 100%;
+    margin: auto auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+p {
+    width: 100%;
+    word-wrap: normal;
+    font-size: 16px;
+    font-family: 'KozGoPr6N-Regular';
+}
+
+.normal-section {
+    height: 700px;
+}
+
+.background-light {
+    background-color: #e3f5ff;
+    color: #061a26;
+}
+
+.background-dark {
+    background-color: #061a26;
+    color: #e3f5ff;
+}
+.triangle-left {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(135deg, #29aeff84, #e629ff24);
+    float: left;
+    -webkit-clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 35% 0, 100% 100%, 0% 100%);
+}
+
+.triangle-right {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(135deg, #e629ff24, #29aeff84);
+    float: right;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 100%);
+}
+/*pentagon fuwafuwa*/
+.fuwafuwa {
+    -webkit-animation:fuwafuwa 3s infinite linear alternate;
+    animation:fuwafuwa 3s infinite linear alternate;
+}
+
+@-webkit-keyframes fuwafuwa {
+    0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
+    50% {-webkit-transform:translate(0, 15px) rotate(0deg);}
+    100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+}
+
+@keyframes fuwafuwa {
+    0% {-webkit-transform:translate(0, 0) rotate(-5deg);}
+    50% {-webkit-transform:translate(0, 15px) rotate(0deg);}
+    100% {-webkit-transform:translate(0, 0)rotate(5deg);}
+}
+/*font settings*/
+.title-text {
+    padding-top: 88px;
+    padding-bottom: 72px;
+    font-size: 48px;
+    font-family: "SF-Pro-Display-Semibold";
+}
+
+.main-text {
+    font-size: 32px;
+    font-family: "KozGoPr6N-Regular";
+    letter-spacing: 5px;
+    font-weight: 100;
+    padding-bottom: 72px;
+}
+
+.sub-text {
+    font-size: 24px;
+    font-family: "KozGoPr6N-Regular";
+    letter-spacing: 8px;
+    padding-bottom: 56px;
+}
+
+.ultra-light-text {
+    font-family: "SF-Pro-Display-Ultralight";
+    letter-spacing: 10px;
+}
+
+.concept-text {
+    font-family: "DINNextLTPro-Bold";
+    letter-spacing: 10px;
+    font-size: 64px;
+    padding-bottom: 80px;
+}
+
+.main-text-thin {
+    font-size: 32px;
+    font-family: "SF-Pro-Display-Ultralight";
+    letter-spacing: 10px;
+    font-weight: 100;
+    padding-bottom: 32px;
+}
+/*fuwat below*/
+.fuwatAnime {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1.5s;
+ -ms-animation-duration:1.5s;
+ animation-duration:1.5s;
+ -webkit-animation-name: fuwatAnime;
+ -ms-animation-name: fuwatAnime;
+ animation-name: fuwatAnime;
+ visibility: visible !important;
+}
+@-webkit-keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fuwatAnime {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+/*scroll delaying*/
+/*vertical*/
+#scroll_bg01 {
+  background-image: url(images/scroll_bg01.png);
+  background-repeat: no-repeat;
+  background-position: 10px 0px;
+  height: 3000px;
+}
+#scroll_bg02 {
+  background-image: url(images/scroll_bg02.png);
+  background-repeat: no-repeat;
+  background-position: 220px 0px;
+  height: 3000px;
+}
+#scroll_bg03 {
+  background-image: url(images/scroll_bg03.png);
+  background-repeat: no-repeat;
+  background-position: 440px 0px;
+  height: 3000px;
+}
+/*horizontal*/
+#scroll_bg04 {
+  background-image: url(images/scroll_bg01.png);
+  background-repeat: no-repeat;
+  background-position: 0px 10px;
+  height: 3000px;
+}
+#scroll_bg05 {
+  background-image: url(images/scroll_bg02.png);
+  background-repeat: no-repeat;
+  background-position: 0px 220px;
+  height: 3000px;
+}
+
+/*For header*/
+.header-section {
+    height: 100vh;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+    overflow: hidden;
+    position: absolute;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+/*title svg animation*/
+
+.cls-1 {
+    fill: none;
+    stroke: #e3f5ff;
+    /*線の色を指定する*/
+    stroke-dasharray: 2000;
+    /*線の間隔を指定する*/
+    stroke-dashoffset: 0;
+    /*線の位置を指定する(IEは効かない属性)*/
+    stroke-width: 1;
+    /*線の太さを指定する*/
+    -webkit-animation: hello 3s ease-in forwards;
+    animation: hello 3s ease-in forwards;
+}
+
+@-webkit-keyframes hello {
+    0% {
+        stroke-dashoffset: 2000;
+        fill: transparent;
+        /*透過*/
+    }
+
+    50% {
+        fill: transparent;
+        /*透過*/
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #333;
+    }
+}
+
+@keyframes hello {
+    0% {
+        stroke-dashoffset: 2000;
+        fill: transparent;
+        /*透過*/
+    }
+
+    50% {
+        fill: transparent;
+        /*透過*/
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #e3f5ff;
+    }
+}
+
+header svg {
+    padding-top: 20vh;
+    width: 500px;
+}
+
+#pentagon {
+    float: right;
+    position: absolute;
+    bottom: 10%;
+}
+
+#before {
+    fill: #061a2691;
+}
+
+#after {
+    display: none;
+}
+
+
+
+/*For about*/
+.profile-image {
+    width: 300px;
+    height: 300px;
+    float: right;
+    padding-top: 96px;
+    padding-right: 40px;
+}
+
+/*For concept*/
+/*For passion*/
+/*For what-I-do*/
+/*For works*/
+.cell {
+    width: 400px;
+    height: 300px;
+    float: left;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+}
+/*For Social NetWorks*/
+/*For Footer*/
+.copyright {
+    text-align: center;
+    font-family: "SF-Pro-Display-Thin";
+    letter-spacing: 6px;
+    padding: 24px;
+}
