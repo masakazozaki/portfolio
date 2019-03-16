@@ -358,14 +358,8 @@ header svg {
 /*For passion*/
 /*For what-I-do*/
 /*For works*/
-.cell {
-    width: 400px;
-    height: 300px;
-    float: left;
-    background-color: #fff;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+.works-image {
+    padding-right: 32px;
 }
 /*For Social NetWorks*/
 /*For Footer*/
