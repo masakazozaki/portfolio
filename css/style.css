@@ -47,8 +47,36 @@
 
 }
 
+html {
+    background-color: #000;
+}
+
 .position-absolute {
     position: absolute;
+}
+
+body {
+    animation: fadeIn 1s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 canvas {
@@ -69,7 +97,7 @@ canvas {
 
 p {
     width: 100%;
-    word-wrap: normal;
+    word-wrap: break-word;
     font-size: 16px;
     font-family: 'KozGoPr6N-Regular';
 }
@@ -146,6 +174,7 @@ p {
     padding-bottom: 72px;
     font-size: 48px;
     font-family: "SF-Pro-Display-Semibold";
+    letter-spacing: 4px;
 }
 
 .main-text {
@@ -364,33 +393,60 @@ header svg {
 /*For what-I-do*/
 /*For works*/
 .work-category-text {
-    color: #29aeff
-    background: -webkit-linear-gradient(90deg, #29aeff, #e629ff);
+    color: #29aeff background: -webkit-linear-gradient(90deg, #29aeff, #e629ff);
     background: linear-gradient(90deg, #29aeff, #e629ff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "SF-Pro-Display-Semibold";
     font-size: 42px;
-    display:inline-block
+    display: inline-block
 }
 
 .works-image {
     padding: 16px 64px;
+    margin: 0;
+    float: left;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    width: 400px;
+    height: 300px;
 }
 
 .cell-text {
     width: 400px;
     float: left;
-    position: absolute;
     overflow: hidden;
+    padding: 32px 0;
+
+}
+
+.cell-text h2 {
+    font-family: 'SF-Pro-Display-Semibold', 'KozGoPr6N-Regular';
+    font-size: 32px;
+}
+
+.cell-text h3 {
+    font-family: 'SF-Pro-Display-Thin', 'KozGoPr6N-Regular';
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+/cell-text p {
+    width: 400px;
 }
 
 /*For Social NetWorks*/
+#Social-Networks a {
+    text-decoration: none;
+    color: #061a26;
+    padding: 64px;
+}
 /*For Footer*/
 .copyright {
     text-align: center;
-    font-family: "SF-Pro-Display-Thin";
+    font-family: "SF-Pro-Display-Thin", 'KozGoPr6N-Regular';
     letter-spacing: 6px;
     padding: 24px;
 }
