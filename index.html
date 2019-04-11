@@ -6,23 +6,23 @@
     <title>Masakaz Ozaki</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/snap.svg-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/particles.min.js"></script>
-    <script src="js/jquery.bxSlider.js"></script>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.bxslider').bxSlider();
         });
     </script>
     <!--    fuwat below-->
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.fuwat').css('visibility', 'hidden');
-            $(window).scroll(function() {
+            $(window).scroll(function () {
                 var windowHeight = $(window).height(),
                     topWindow = $(window).scrollTop();
-                $('.fuwat').each(function() {
+                $('.fuwat').each(function () {
                     var objectPosition = $(this).offset().top;
                     if (topWindow > objectPosition - windowHeight + 200) {
                         $(this).addClass("fuwatAnime");
@@ -70,13 +70,13 @@
                     eFaceAfter = svg.select('#after'),
                     dFaceBefore = eFaceBefore.attr('d'),
                     dFaceAfter = eFaceAfter.attr('d'),
-                    fnAnimation = function() {
+                    fnAnimation = function () {
                         eFaceBefore.animate({
                             'd': dFaceAfter
-                        }, 5000, function() {
+                        }, 5000, function () {
                             this.animate({
                                 'd': dFaceBefore
-                            }, 5000, function() {
+                            }, 5000, function () {
                                 fnAnimation();
                             });
                         });
