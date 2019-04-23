@@ -450,3 +450,14 @@ header svg {
     letter-spacing: 6px;
     padding: 24px;
 }
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .container {
+        width: 512px;
+    }
+ }
+/*スマホ*/
+ @media screen and (max-width: 375px) {
+
+ }
+
