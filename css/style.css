@@ -393,23 +393,25 @@ header svg {
 /*For what-I-do*/
 /*For works*/
 .work-category-text {
-    color: #29aeff background: -webkit-linear-gradient(90deg, #29aeff, #e629ff);
+    color: #29aeff;
+    background: -webkit-linear-gradient(90deg, #29aeff, #e629ff);
     background: linear-gradient(90deg, #29aeff, #e629ff);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "SF-Pro-Display-Semibold";
     font-size: 42px;
-    display: inline-block
+    display: inline-block;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
 }
 
 .works-image {
-    padding: 16px 64px;
-    margin: 0;
+    margin: 16px 64px;
     float: left;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
     width: 400px;
     height: 300px;
 }
@@ -418,7 +420,7 @@ header svg {
     width: 400px;
     float: left;
     overflow: hidden;
-    padding: 32px 0;
+    margin: 32px 0;
 
 }
 
@@ -441,8 +443,20 @@ cell-text p {
 #Social-Networks a {
     text-decoration: none;
     color: #061a26;
-    /* padding: 64px; */
+    display: inline-block;
+    transition: .3s;
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
+
+
+#Social-Networks a:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    color: #29aeff;
+}
+
 /*For Footer*/
 .copyright {
     text-align: center;
@@ -459,7 +473,7 @@ cell-text p {
 /*スマホ*/
  @media screen and (max-width: 375px) {
     container {
-        width: 100vw;
+        width: 90vw;
     }
  }
 
