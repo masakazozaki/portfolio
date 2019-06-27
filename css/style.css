@@ -401,7 +401,8 @@ header svg {
     -webkit-text-fill-color: transparent;
     font-family: "SF-Pro-Display-Semibold";
     font-size: 42px;
-    display: inline-block
+    display: inline-block;
+    letter-spacing: 4px;
 }
 
 .works-image {
@@ -453,6 +454,7 @@ cell-text p {
 #Social-Networks a:hover {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
+    color: #29aeff;
 }
 
 /*For Footer*/
