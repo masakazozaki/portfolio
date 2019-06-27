@@ -393,7 +393,8 @@ header svg {
 /*For what-I-do*/
 /*For works*/
 .work-category-text {
-    color: #29aeff background: -webkit-linear-gradient(90deg, #29aeff, #e629ff);
+    color: #29aeff;
+    background: -webkit-linear-gradient(90deg, #29aeff, #e629ff);
     background: linear-gradient(90deg, #29aeff, #e629ff);
     -webkit-background-clip: text;
     background-clip: text;
@@ -441,8 +442,19 @@ cell-text p {
 #Social-Networks a {
     text-decoration: none;
     color: #061a26;
-    /* padding: 64px; */
+    display: inline-block;
+    transition: .3s;
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
+
+
+#Social-Networks a:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
 /*For Footer*/
 .copyright {
     text-align: center;
