@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
     <title>Masakaz Ozaki</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/snap.svg-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/particles.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider();
+        });
+
+    </script>
     <!--    fuwat below-->
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.fuwat').css('visibility', 'hidden');
-            $(window).scroll(function() {
+            $(window).scroll(function () {
                 var windowHeight = $(window).height(),
                     topWindow = $(window).scrollTop();
-                $('.fuwat').each(function() {
+                $('.fuwat').each(function () {
                     var objectPosition = $(this).offset().top;
                     if (topWindow > objectPosition - windowHeight + 200) {
                         $(this).addClass("fuwatAnime");
@@ -23,13 +31,60 @@
                 });
             });
         });
+
     </script>
+<!--    favicon below-->
+    <meta name="msapplication-square70x70logo" content="favicons/site-tile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="favicons/site-tile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="favicons/site-tile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="favicons/site-tile-310x310.png">
+    <meta name="msapplication-TileColor" content="#0078d7">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicons/favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="favicons/android-chrome-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/android-chrome-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="/faviconsandroid-chrome-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="favicons/android-chrome-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="favicons/android-chrome-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="favicons/android-chrome-152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicons/android-chrome-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="36x36" href="favicons/icon-36x36.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicons/icon-48x48.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="favicons/icon-72x72.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/icon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="favicons/icon-128x128.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="favicons/icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="152x152" href="favicons/icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="favicons/icon-160x160.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="favicons/icon-196x196.png">
+    <link rel="icon" type="image/png" sizes="256x256" href="favicons/icon-256x256.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="favicons/icon-384x384.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicons/icon-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/icon-16x16.png">
+    <link rel="icon" type="image/png" sizes="24x24" href="favicons/icon-24x24.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/icon-32x32.png">
+    <link rel="manifest" href="/manifest.json">
+
 </head>
 
 <body>
     <header class="header-section" id="gradient">
         <div id="particles-js"></div>
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
         <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.45 507.57">
                 <path class="cls-1" d="M46.84,54.34V17h-.26L31.38,54.34H25L9.75,17H9.5V54.34H1V1.71H11.9L28,41.87h.29L44.43,1.71H55.3V54.34Z" />
@@ -63,18 +118,19 @@
                     eFaceAfter = svg.select('#after'),
                     dFaceBefore = eFaceBefore.attr('d'),
                     dFaceAfter = eFaceAfter.attr('d'),
-                    fnAnimation = function() {
+                    fnAnimation = function () {
                         eFaceBefore.animate({
                             'd': dFaceAfter
-                        }, 5000, function() {
+                        }, 5000, function () {
                             this.animate({
                                 'd': dFaceBefore
-                            }, 5000, function() {
+                            }, 5000, function () {
                                 fnAnimation();
                             });
                         });
                     };
                 fnAnimation();
+
             </script>
         </div>
     </header>
@@ -83,7 +139,7 @@
         <div class="container">
             <div class="position-absolute" id="scroll-delay">
                 <img src="images/ProfileImage.png" alt="" class="profile-image fuwat">
-                <h1 class="title-text fuwat" >About me</h1>
+                <h1 class="title-text fuwat">About me</h1>
                 <h2 class="main-text fuwat">尾崎正和 <span class="ultra-light-text">/ Masakaz Ozaki</span></h2>
                 <h2 class="sub-text fuwat">慶應義塾大学環境情報学部2年<br>鳴川肇研究会</h2>
                 <p class="fuwat">高校三年生夏、大学の一般受験は自分のフィールドでないと悟る。そして実技入試、情報入試などの自分にしかない技術を最大限活かせる受験方式で大学を受験することを決意。中学二年からプログラミングをしていたこともあり、情報入試で慶應義塾大学環境情報学部に入学。大学ではデザイン、建築、プログラミングの3つを柱に多角的に学び、大学2年から鳴川研究会でデザインや建築を学びながら、Life is Tech!でメンターとして中高生にプログラミングとITの楽しさを伝えている。</p>
@@ -125,33 +181,155 @@
     <section id="Works" class="background-dark">
         <div class="container">
             <h1 class="title-text">WORKS</h1>
-            <div id="recent-activitys">
-                <h2>Recent Activitys</h2>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+            <div id="features" class="fuwat">
+                <h2 class="work-category-text">Features</h2>
+                <ul class="bxslider">
+                    <li class="container">
+                        <img src="images/work-physical/vase.png" class="works-image">
+                        <div class="cell-text">
+                            <h3>Oct. 2018</h3>
+                            <h2>Edible Organic Vase</h2>
+                            <p>この美しい花瓶はすべて食べられる素材でできている。 <br>
+                                この花瓶が水を貯められるのはたった一時間。 <br>
+                                花瓶が水によって柔らかくなり、 <br>
+                                水を貯めていられるそのギリギリのとき、<br>
+                                壊れるその寸前、<br>
+                                最後の一瞬、<br>
+                                この花瓶は一番美しくなる。</p>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-virtual/blast.jpeg" class="works-image">
+                        <div class="cell-text">
+                            <h3>Feb. 2019</h3>
+                            <h2>Blast Work Chief Designer</h2> <p>DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription</p>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-physical/soy-sauce.png" class="works-image">
+                        <div class="cell-text">
+                            <h3>Nov. 2018</h3>
+                            <h2>Soy Sauce Display</h2>
+                            <p>このユニークなディスプレイはDynamic shape
+                                display と醤油を注ぐと絵が浮き出る醤油
+                                皿を見事に融合したディスプレイである。<br>
+                                醤油は水深によって色が透明、金、オレン
+                                ジ、茶色、黒と様々に変化していく。</p>
+                        </div>
+                    <li class="container">
+                        <img src="images/work-virtual/golden-ratio-ar.jpeg" class="works-image">
+                        <div class="cell-text">
+                            <h3>Jun. 2018</h3>
+                            <h2>Golden Ratio AR</h2>
+                            <p>この黄金比ARは建築家、デザイナー、その他の黄金比を日頃からよく使う方のために開発されました。今までは黄金比の図形を現実世界に表現するにはとても正確な計算が必要でした。ですがそれは昨日までの話です。今日からはたったの２タップで誰でも黄金比のオブジェクトを現実世界に配置できます。</p>
+                            <a href="https://www.google.com"><img src="images/Download_on_the_App_Store_Badge.svg" alt=""></a>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-virtual/triple-browser.jpeg" class="works-image">
+                        <div class="cell-text">
+                            <h3>May. 2018</h3>
+                            <h2>Triple Browser</h2>
+                            <p>It is the innovation of Internet browser that has never been before. This App can launch three tabs at the same time. For example, you can surf the internet in one tab while watching video on the video playback site also, you can search the information of the destination on the web while navigating with the map site, how you use is up to you! Let's introduce your favorite usage in the review!</p>
+                            <a href="www.google.com"> <img src="images/Download_on_the_App_Store_Badge.svg" alt="" ></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div id="vertual-obhects">
-                <h2>Vertual Objects</h2>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+            <div id="virtual-objects" class="fuwat">
+                <h2 class="work-category-text">Virtual Objects</h2>
+                <ul class="bxslider">
+                    <li class="container">
+                        <img src="images/work-virtual/blast.jpeg" class="works-image">
+                        <div class="cell-text">
+                            <h3>Feb. 2019</h3>
+                            <h2>Blast Work Chief Designer</h2>  <p>DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription</p>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-virtual/golden-ratio-ar.jpeg" class="works-image">
+                        <div class="cell-text">
+                            <h3>Jun. 2018</h3>
+                            <h2>Golden Ratio AR</h2>
+                            <p>この黄金比ARは建築家、デザイナー、その他の黄金比を日頃からよく使う方のために開発されました。今までは黄金比の図形を現実世界に表現するにはとても正確な計算が必要でした。ですがそれは昨日までの話です。今日からはたったの２タップで誰でも黄金比のオブジェクトを現実世界に配置できます。</p>
+                           <a href="www.google.com"> <img src="images/Download_on_the_App_Store_Badge.svg" alt="" ></a>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-virtual/triple-browser.jpeg" class="works-image">
+                        <div class="cell-text">
+                            <h3>May. 2018</h3>
+                            <h2>Triple Browser</h2>
+                            <p>It is the innovation of Internet browser that has never been before. This App can launch three tabs at the same time. For example, you can surf the internet in one tab while watching video on the video playback site also, you can search the information of the destination on the web while navigating with the map site, how you use is up to you! Let's introduce your favorite usage in the review!</p>
+                            <a href="www.google.com"> <img src="images/Download_on_the_App_Store_Badge.svg" alt="" ></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div id="physical-objects">
-                <h2>Physical Objects</h2>
-                <div class="cell"></div>
-                <div class="cell"></div>
-                <div class="cell"></div>
+            <div id="physical-objects" class="fuwat">
+                <h2 class="work-category-text">Physical Objects</h2>
+                <ul class="bxslider">
+                    <li class="container">
+                        <img src="images/work-physical/soy-sauce.png" class="works-image">
+                        <div class="cell-text">
+                            <h3>Nov. 2018</h3>
+                            <h2>Soy Sauce Display</h2>
+                            <p>このユニークなディスプレイはDynamic shape
+                                display と醤油を注ぐと絵が浮き出る醤油
+                                皿を見事に融合したディスプレイである。<br>
+                                醤油は水深によって色が透明、金、オレン
+                                ジ、茶色、黒と様々に変化していく。</p>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-physical/vase.png" class="works-image">
+                        <div class="cell-text">
+                            <h3>Oct. 2018</h3>
+                            <h2>Edible Organic Vase</h2>
+                            <p>この美しい花瓶はすべて食べられる素材でできている。 <br>
+                                この花瓶が水を貯められるのはたった一時間。 <br>
+                                花瓶が水によって柔らかくなり、 <br>
+                                水を貯めていられるそのギリギリのとき、<br>
+                                壊れるその寸前、<br>
+                                最後の一瞬、<br>
+                                この花瓶は一番美しくなる。</p>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-physical/shigeru-ban.png" class="works-image">
+                        <div class="cell-text">
+                            <h3>Jul. 2018</h3>
+                            <h2>No Door House</h2>
+                            <p>20世紀の最も偉大な建築家であるミース・ファン・デル・ローエの 作品のテーマをいかにこの湘南台の地で表現するかに最も重きを置 いた。特にファンズワース邸で用いられていたより快適に暮らす手 法を最大限活かし、この土地に落とし込んだ。そして、バルセロ ナ・パビリオンの壁と柱の構造をも意識した。</p>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-physical/triangle-object.png" class="works-image">
+                        <div class="cell-text">
+                            <h3>Oct. 2017</h3>
+                            <h2>Triangle Objects</h2>
+                            <p>DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription</p>
+                        </div>
+                    </li>
+                    <li class="container">
+                        <img src="images/work-physical/dessan.png" class="works-image">
+                        <div class="cell-text">
+                            <h3>Oct. 2017</h3>
+                            <h2>Assumed Drawing</h2>
+                            <p>DescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescriptionDescription</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
-    <section id="Social Networks" class="normal-section background-light">
+    <section id="Social-Networks" class="normal-section background-light">
         <div class="container">
             <h1 class="title-text">Social Networks</h1>
-            <h2 class="main-text-thin">Twitter</h2>
-            <h2 class="main-text-thin">Facebook</h2>
-            <h2 class="main-text-thin">Instagram</h2>
-            <h2 class="main-text-thin">Wantedly</h2>
+            <a href="https://twitter.com/monster_ozaki"><h2 class="main-text-thin">Twitter→</h2></a>
+            <a href="https://www.facebook.com/r2d28192"><h2 class="main-text-thin">Facebook→</h2></a>
+            <a href="https://www.instagram.com/r2d28192"><h2 class="main-text-thin">Instagram→</h2></a>
+            <a href="https://www.wantedly.com/users/91829818"><h2 class="main-text-thin">Wantedly→</h2></a>
         </div>
     </section>
     <footer class="background-dark">
