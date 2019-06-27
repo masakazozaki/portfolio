@@ -171,7 +171,7 @@ p {
 /*font settings*/
 .title-text {
     padding-top: 88px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-size: 48px;
     font-family: "SF-Pro-Display-Semibold";
     letter-spacing: 4px;
@@ -182,14 +182,14 @@ p {
     font-family: "KozGoPr6N-Regular";
     letter-spacing: 5px;
     font-weight: 100;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .sub-text {
     font-size: 24px;
     font-family: "KozGoPr6N-Regular";
     letter-spacing: 8px;
-    padding-bottom: 56px;
+    margin-bottom: 56px;
 }
 
 .ultra-light-text {
@@ -201,7 +201,7 @@ p {
     font-family: "DINNextLTPro-Bold";
     letter-spacing: 10px;
     font-size: 64px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
 }
 
 .main-text-thin {
@@ -209,7 +209,7 @@ p {
     font-family: "SF-Pro-Display-Ultralight";
     letter-spacing: 10px;
     font-weight: 100;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 /*fuwat below*/
@@ -433,7 +433,7 @@ header svg {
     letter-spacing: 4px;
 }
 
-/cell-text p {
+cell-text p {
     width: 400px;
 }
 
@@ -441,7 +441,7 @@ header svg {
 #Social-Networks a {
     text-decoration: none;
     color: #061a26;
-    padding: 64px;
+    /* padding: 64px; */
 }
 /*For Footer*/
 .copyright {
@@ -453,11 +453,13 @@ header svg {
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
     .container {
-        width: 512px;
+        width: 375px;
     }
  }
 /*スマホ*/
  @media screen and (max-width: 375px) {
-
+    container {
+        width: 100vw;
+    }
  }
 
