@@ -1,42 +1,42 @@
 /*For all contents*/
 @font-face {
     font-family: 'SF-Pro-Display-Light';
-    src: url('../fonts/SF-Pro-Display-Light.otf') format('opentype');
+    src: url('../Fonts/SF-Pro-Display-Light.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'KozGoPr6N-Regular';
-    src: url('../fonts/KozGoPr6N-Regular.otf') format('opentype');
+    src: url('../Fonts/KozGoPr6N-Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'SF-Pro-Display-Semibold';
-    src: url('../fonts/SF-Pro-Display-Semibold.otf') format('opentype');
+    src: url('../Fonts/SF-Pro-Display-Semibold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'SF-Pro-Display-Thin';
-    src: url('../fonts/SF-Pro-Display-Thin.otf') format('opentype');
+    src: url('../Fonts/SF-Pro-Display-Thin.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'SF-Pro-Display-Ultralight';
-    src: url('../fonts/SF-Pro-Display-Ultralight.otf') format('opentype');
+    src: url('../Fonts/SF-Pro-Display-Ultralight.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'SFCompactDisplay-Semibold';
-    src: url('../fonts/SFCompactDisplay-Semibold.otf') format('opentype');
+    src: url('../Fonts/SFCompactDisplay-Semibold.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'SF-Pro-Display-Regular';
-    src: url('../fonts/SF-Pro-Display-Regular.otf') format('opentype');
+    src: url('../Fonts/SF-Pro-Display-Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'DINNextLTPro-Bold';
-    src: url('../fonts/DINNextLTPro-Bold.otf') format('opentype');
+    src: url('../Fonts/DINNextLTPro-Bold.otf') format('opentype');
 }
 
 
@@ -476,4 +476,3 @@ cell-text p {
         width: 90vw;
     }
  }
-
