@@ -10,27 +10,6 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/particles.min.js"></script>
     <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <script>
-        $(document).ready(function () {
-            $('.bxslider').bxSlider();
-        });
-    </script>
-    <!--    fuwat below-->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.fuwat').css('visibility', 'hidden');
-            $(window).scroll(function () {
-                var windowHeight = $(window).height(),
-                    topWindow = $(window).scrollTop();
-                $('.fuwat').each(function () {
-                    var objectPosition = $(this).offset().top;
-                    if (topWindow > objectPosition - windowHeight + 200) {
-                        $(this).addClass("fuwatAnime");
-                    }
-                });
-            });
-        });
-    </script>
     <!--    favicon below-->
     <meta name="msapplication-square70x70logo" content="favicons/site-tile-70x70.png">
     <meta name="msapplication-square150x150logo" content="favicons/site-tile-150x150.png">
@@ -458,6 +437,27 @@
             <p class="copyright">&copy; Masakaz Ozaki All Rights Reserved<p>
         </div>
     </footer>
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider();
+        });
+    </script>
+    <!--    fuwat below-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.fuwat').css('visibility', 'hidden');
+            $(window).scroll(function () {
+                var windowHeight = $(window).height(),
+                    topWindow = $(window).scrollTop();
+                $('.fuwat').each(function () {
+                    var objectPosition = $(this).offset().top;
+                    if (topWindow > objectPosition - windowHeight + 200) {
+                        $(this).addClass("fuwatAnime");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
