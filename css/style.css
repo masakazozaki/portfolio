@@ -5,11 +5,6 @@
 }
 
 @font-face {
-    font-family: 'KozGoPr6N-Regular';
-    src: url('../Fonts/KozGoPr6N-Regular.otf') format('opentype');
-}
-
-@font-face {
     font-family: 'SF-Pro-Display-Semibold';
     src: url('../Fonts/SF-Pro-Display-Semibold.otf') format('opentype');
 }
@@ -100,7 +95,7 @@ p {
     width: 100%;
     word-wrap: break-word;
     font-size: 16px;
-    font-family: 'KozGoPr6N-Regular';
+    font-family: 'A1 Gothic L';
 }
 
 .normal-section {
@@ -180,7 +175,7 @@ p {
 
 .main-text {
     font-size: 32px;
-    font-family: "KozGoPr6N-Regular";
+    font-family: "A1 Gothic L";
     letter-spacing: 5px;
     font-weight: 100;
     margin-bottom: 72px;
@@ -188,7 +183,7 @@ p {
 
 .sub-text {
     font-size: 24px;
-    font-family: "KozGoPr6N-Regular";
+    font-family: "A1 Gothic L";
     letter-spacing: 8px;
     margin-bottom: 56px;
 }
@@ -259,9 +254,11 @@ p {
 .header-section {
     height: 100vh;
 }
+
 #gradient {
     overflow: hidden;
 }
+
 /* ---- stats.js ---- */
 
 .count-particles {
@@ -428,12 +425,12 @@ header svg {
 }
 
 .cell-text h2 {
-    font-family: 'SF-Pro-Display-Semibold', 'KozGoPr6N-Regular';
+    font-family: 'SF-Pro-Display-Semibold', 'A1 Gothic L';
     font-size: 32px;
 }
 
 .cell-text h3 {
-    font-family: 'SF-Pro-Display-Thin', 'KozGoPr6N-Regular';
+    font-family: 'SF-Pro-Display-Thin', 'A1 Gothic L';
     font-size: 16px;
     letter-spacing: 4px;
 }
@@ -453,7 +450,6 @@ cell-text p {
     transform: scale(1);
 }
 
-
 #Social-Networks a:hover {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
@@ -463,7 +459,7 @@ cell-text p {
 /*For Footer*/
 .copyright {
     text-align: center;
-    font-family: "SF-Pro-Display-Thin", 'KozGoPr6N-Regular';
+    font-family: "SF-Pro-Display-Thin", 'A1 Gothic L';
     letter-spacing: 6px;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -473,10 +469,11 @@ cell-text p {
     .container {
         width: 375px;
     }
- }
+}
+
 /*スマホ*/
- @media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
     container {
         width: 90vw;
     }
- }
+}
