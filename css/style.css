@@ -54,6 +54,10 @@ body {
     animation: fadeIn 1s ease 0s 1 normal;
 }
 
+p {
+    line-height: 2em;
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0
@@ -421,7 +425,6 @@ header svg {
     float: left;
     overflow: hidden;
     margin: 32px 0;
-
 }
 
 .cell-text h2 {
