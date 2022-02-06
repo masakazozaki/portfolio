@@ -16,7 +16,8 @@
         <script src="js/snap.svg-min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-        <script src="js/particles.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.halo.min.js"></script>
         <link rel="stylesheet" href="css/jquery.bxslider.css">
         <!--    favicon below-->
         <meta name="msapplication-square70x70logo" content="favicons/site-tile-70x70.png">
@@ -63,13 +64,15 @@
         <link rel="icon" type="image/png" sizes="24x24" href="favicons/icon-24x24.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicons/icon-32x32.png">
         <link rel="manifest" href="/manifest.json">
-         <!-- Morisawa TypeSquare -->
-        <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5fe7eaddf9ec44b0adc5174de90393a3" charset="utf-8"></script>
+        <!-- Morisawa TypeSquare -->
+        <script type="text/javascript"
+            src="//typesquare.com/3/tsst/script/ja/typesquare.js?5fe7eaddf9ec44b0adc5174de90393a3"
+            charset="utf-8"></script>
     </head>
 
 <body>
-    <header class="header-section" id="gradient">
-        <div id="particles-js"></div>
+    <header class="header-section" id="halo">
+        <div id="gradient"></div>
         <script src="js/main.js"></script>
         <div class="container">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.45 507.57">
@@ -97,9 +100,9 @@
                     d="M466,15.68h10.47L461,32.31l16.12,22h-10.5L454.39,37.82l-3.06,3.1V54.34h-9.08V1.71h9.08V31.8h.11Z" />
                 <path class="cls-1"
                     d="M480.46,4.92a5,5,0,1,1,5,4.93A4.93,4.93,0,0,1,480.46,4.92Zm.47,10.76H490V54.34h-9.08Z" />
-                <path class="cls-1"
-                    d="M20.46,123.71c10.46,0,17.72,7.12,17.72,17.62s-7.47,17.61-18.12,17.61H9.41v17.4H0V123.71Zm-11,27.65h8.53c6.75,0,10.69-3.65,10.69-10s-3.9-9.92-10.65-9.92H9.41Z" />
-                <path class="cls-1"
+                <!-- <path class="cls-1"
+                    d="M20.46,123.71c10.46,0,17.72,7.12,17.72,17.62s-7.47,17.61-18.12,17.61H9.41v17.4H0V123.71Zm-11,27.65h8.53c6.75,0,10.69-3.65,10.69-10s-3.9-9.92-10.65-9.92H9.41Z" /> -->
+                <!-- <path class="cls-1"
                     d="M42.51,157c0-12.47,7.44-20.13,18.71-20.13S79.93,144.5,79.93,157,72.56,177.1,61.22,177.1,42.51,169.55,42.51,157Zm28.19,0c0-8.21-3.72-12.91-9.48-12.91s-9.48,4.7-9.48,12.91,3.72,12.91,9.48,12.91S70.7,165.25,70.7,157Z" />
                 <path class="cls-1"
                     d="M85.76,137.68h8.71v6.75h.18c1.32-4.71,4.71-7.41,9.27-7.41a12.57,12.57,0,0,1,2.84.37v8.2a11.54,11.54,0,0,0-3.68-.51c-5.14,0-8.24,3.32-8.24,8.76v22.5H85.76Z" />
@@ -113,13 +116,7 @@
                 <path class="cls-1"
                     d="M220.08,126.92a5,5,0,1,1,5,4.93A4.93,4.93,0,0,1,220.08,126.92Zm.47,10.76h9.08v38.66h-9.08Z" />
                 <path class="cls-1"
-                    d="M235.65,157c0-12.47,7.44-20.13,18.71-20.13s18.7,7.62,18.7,20.13-7.36,20.09-18.7,20.09S235.65,169.55,235.65,157Zm28.19,0c0-8.21-3.72-12.91-9.48-12.91s-9.49,4.7-9.49,12.91,3.72,12.91,9.49,12.91S263.84,165.25,263.84,157Z" />
-            </svg>
-            <svg id="pentagon" class="fuwafuwa" viewBox="0 0 550 550.57">
-                <path id="before"
-                    d="M39.25,122.48,7.37,206.55a113.4,113.4,0,0,0-3.38,70l23.62,86.75A113.38,113.38,0,0,0,66,422l70.1,56.29a113.45,113.45,0,0,0,65.54,24.86l89.81,4.33A113.42,113.42,0,0,0,359.11,489l75.21-49.28a113.51,113.51,0,0,0,43.89-54.65L510.08,301a113.41,113.41,0,0,0,3.39-70l-23.63-86.75a113.38,113.38,0,0,0-38.42-58.63l-70.1-56.3A113.48,113.48,0,0,0,315.78,4.47L226,.13a113.43,113.43,0,0,0-67.63,18.42L83.14,67.83A113.35,113.35,0,0,0,39.25,122.48Z" />
-                <path id="after" class="cls-1"
-                    d="M6,138.56l-2,85,1,71-5,89c0,24,3,56,43,74l93,34,53,22,97,31c30,8,60-2,76-22l53-70,45-54,61-81c8-11,19-49,2-75l-51-74-36-61-61-82c-26-29-57-29-84-21l-75,25-65,14-94,29C28,80.56,6,110.56,6,138.56Z" />
+                    d="M235.65,157c0-12.47,7.44-20.13,18.71-20.13s18.7,7.62,18.7,20.13-7.36,20.09-18.7,20.09S235.65,169.55,235.65,157Zm28.19,0c0-8.21-3.72-12.91-9.48-12.91s-9.49,4.7-9.49,12.91,3.72,12.91,9.49,12.91S263.84,165.25,263.84,157Z" /> -->
             </svg>
             <script>
                 var svg = Snap('#pentagon'),
@@ -146,11 +143,11 @@
         <div class="triangle-left"></div>
         <div class="container">
             <div class="position-absolute" id="scroll-delay">
-                <img src="images/ProfileImage.png" alt="" class="profile-image fuwat">
-                <h1 class="title-text fuwat">About me</h1>
-                <h2 class="main-text fuwat">尾崎正和 <span class="ultra-light-text">/ Masakaz Ozaki</span></h2>
-                <h2 class="sub-text fuwat">慶應義塾大学環境情報学部3年<br>鳴川肇研究会・増井俊之研究会</h2>
-                <p class="fuwat">
+                <img src="images/ProfileImage.png" alt="" class="profile-image">
+                <h1 class="title-text">About me</h1>
+                <h2 class="main-text">尾崎正和 <span class="ultra-light-text">/ Masakaz Ozaki</span></h2>
+                <h2 class="sub-text">慶應義塾大学環境情報学部3年<br>鳴川肇研究会・増井俊之研究会</h2>
+                <p>
                     高校三年生夏、大学の一般受験は自分のフィールドでないと悟る。そして実技入試、情報入試などの自分にしかない技術を最大限活かせる受験方式で大学を受験することを決意。中学二年からプログラミングをしていたこともあり、情報入試で慶應義塾大学環境情報学部に入学。大学ではデザイン、建築、プログラミングの3つを柱に多角的に学び、大学2年から鳴川研究会でデザインや建築を学び、増井研究会ではコンピュータと人間を繋ぐ新しいインタフェースの研究をしながら、Life
                     is Tech !でメンターとして中高生にプログラミングとITの楽しさを伝えている。</p>
             </div>
@@ -343,7 +340,8 @@
                                     target="_brank">論文リンク</a><br>
                                 特許出願中<br>
                                 <a href="https://sasaki.dev" target="_brank">Yuji Sasaki</a>, Yushi Nakaya, Masakaz
-                                Ozaki, Toshiyuki Masui</p>
+                                Ozaki, Toshiyuki Masui
+                            </p>
                         </div>
                     </li>
                     <li class="container">
@@ -358,7 +356,8 @@
                                 幾何学を忘れさせる。<br>
                                 書籍 Computational Fabricationに掲載<br>
                                 <a href="https://www.amazon.co.jp/-/en/田中-浩也/dp/4395321542/ref=sr_1_1?dchild=1&keywords=コンピューテーショナルファブリケーション&qid=1609132653&sr=8-1
-                                target="_brank>Amazon リンク</a></p>
+                                target=" _brank>Amazon リンク</a>
+                            </p>
                         </div>
                     </li>
                     <li class="container">
@@ -465,6 +464,24 @@
         $(document).ready(function () {
             $('.bxslider').bxSlider();
         });
+    </script>
+
+    <script>
+        VANTA.HALO({
+            el: "#halo",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            baseColor: 0x30aaff,
+            backgroundColor: 0x00000000,
+            amplitudeFactor: 0.50,
+            size: 2.00,
+            xOffset: 0.2,
+            yOffset: 0.2
+
+        })
     </script>
     <!--    fuwat below-->
     <script type="text/javascript">

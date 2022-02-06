@@ -256,67 +256,25 @@ p {
 
 /*For header*/
 .header-section {
-    height: 100vh;
+    height: 80vh;
 }
+
+#halo {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    overflow: hidden;
+  }
 
 #gradient {
     overflow: hidden;
-}
-
-/* ---- stats.js ---- */
-
-.count-particles {
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    margin-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-}
-
-.js-count-particles {
-    font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-#stats {
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-}
-
-.count-particles {
-    border-radius: 0 0 3px 3px;
-}
-
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
 }
 
 /*title svg animation*/
 
 .cls-1 {
     fill: none;
-    stroke: #e3f5ff;
+    stroke: #fff;
     /*線の色を指定する*/
     stroke-dasharray: 2000;
     /*線の間隔を指定する*/
@@ -332,6 +290,7 @@ p {
     0% {
         stroke-dashoffset: 2000;
         fill: transparent;
+        stroke: #fff;
         /*透過*/
     }
 
@@ -343,6 +302,7 @@ p {
     100% {
         stroke-dashoffset: 0;
         fill: #333;
+        stroke: #ffffff00;
     }
 }
 
@@ -350,6 +310,7 @@ p {
     0% {
         stroke-dashoffset: 2000;
         fill: transparent;
+        stroke: #fff;
         /*透過*/
     }
 
@@ -360,7 +321,8 @@ p {
 
     100% {
         stroke-dashoffset: 0;
-        fill: #e3f5ff;
+        fill: #000;
+        stroke: #ffffff00;
     }
 }
 
