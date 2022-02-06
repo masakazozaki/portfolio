@@ -55,7 +55,11 @@ body {
 }
 
 p {
-    line-height: 2em;
+    line-height: 1.5em;
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 20px;
+    font-family: 'A1 Gothic L';
 }
 
 @keyframes fadeIn {
@@ -93,13 +97,6 @@ canvas {
     left: 0;
     right: 0;
     position: relative;
-}
-
-p {
-    width: 100%;
-    word-wrap: break-word;
-    font-size: 16px;
-    font-family: 'A1 Gothic L';
 }
 
 .normal-section {
@@ -179,14 +176,14 @@ p {
 
 .main-text {
     font-size: 32px;
-    font-family: "A1 Gothic L";
+    font-family: "SF-Pro-Display-Regular";
     letter-spacing: 5px;
     font-weight: 100;
     margin-bottom: 72px;
 }
 
 .sub-text {
-    font-size: 24px;
+    font-size: 32px;
     font-family: "A1 Gothic L";
     letter-spacing: 8px;
     margin-bottom: 56px;
@@ -197,12 +194,6 @@ p {
     letter-spacing: 10px;
 }
 
-.concept-text {
-    font-family: "DINNextLTPro-Bold";
-    letter-spacing: 10px;
-    font-size: 64px;
-    margin-bottom: 80px;
-}
 
 .main-text-thin {
     font-size: 32px;
